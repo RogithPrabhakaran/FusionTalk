@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLoop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.jpg">
+    <h1>Welcome to ThinkLoop</h1>
+    <div class="buttons">
+      <button id="login-btn">Log In</button>
+      <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <div></div>    
+    <!-- Log In Popup -->
+    <div id="login-popup" class="popup">
+      <div class="popup-content">
+        <h2>Log In</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Log In</button>
+        <p style="color: #DAD2DA; font-size: 15px;">Don't have an account? <a href="" id="sorrysignup"></a>Sign Up</a></p>
+      </div>
+    </div>
+    
+    <!-- Sign Up Popup -->
+    <div id="signup-popup" class="popup">
+      <div class="popup-content">
+        <h2>Sign Up</h2>
+        <input type="email" placeholder="Enter Email">
+        <input type="text" placeholder="Enter Username">
+        <input type="password" placeholder="Enter Password">
+        <input type="password" placeholder="Confirm Password">
+        <button>Continue</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
