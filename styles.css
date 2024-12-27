@@ -1,0 +1,151 @@
+/* styles.css */
+body {
+    margin:0;
+    background-color: #161316;
+    color:#DAD2DA;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    /* font-weight:; */
+    font-style:normal;
+
+  }
+  .container img{
+    width: 100px;
+    padding: 45px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .buttons button {
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4F404F;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .buttons button:hover {
+    background-color: #DAD2DA;
+    color: #4F404F;
+  }
+  
+  /* Popup Styling */
+  .popup {
+    position: fixed;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.26);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+  }
+  
+  .popup-content {
+    background: #2D252D;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .popup-content input {
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .popup-content button {
+    background-color: #DAD2DA;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    padding: 10px;
+    border: none;
+    color: #4F404F;
+    border-radius: 20px;
+    cursor: pointer;
+    width:223px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+  }
+  
+  .popup-content button:hover {
+    background-color: #4F404F;
+    color: #DAD2DA;
+  }
+  
+.trending {
+    margin-top: 20px;
+    padding-left: 20PX;
+    align-items: flex-start;
+}
+
+.trending h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    align-items:flex-start;
+    display: flex;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topic-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topic-row button {
+    background-color: #4F404F;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 303px; 
+    /* flex-shrink: 0; */
+    height: 43px;
+    top: 551px;
+    left: 676px;
+    font-family: "Albert Sans", serif;
+}
+
+.topic-row button :hover{
+  background-color: #4F404F;
+  color: #DAD2DA;
+}
