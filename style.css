@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4F404F;
+    color:#DAD2DA;
+
+}
+
+
+.prf{
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #161316;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    background-color:#161316;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #4e4e7e;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 20px;
+    position: relative;
+}
+
+.expand-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.input-box {
+    display: flex;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input-box button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #4e4e7e;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.join-btn {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4e4e7e;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
