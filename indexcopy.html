@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar hidden" id="sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for topics...">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <button class="toggle-sidebar-btn" id="toggle-sidebar">☰</button>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="message">
+                    <div class="user-info">
+                        <img src="user1.png" alt="User 1" class="user-pic">
+                        <span class="user-name">User 1</span>
+                    </div>
+                    <div class="qa-box">
+                        <p class="question">This is a question from the user...</p>
+                        <p class="answer">This is the AI's reply to the user's question.</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="user-info">
+                        <img src="user2.png" alt="User 2" class="user-pic">
+                        <span class="user-name">User 2</span>
+                    </div>
+                    <div class="qa-box">
+                        <p class="question">Another question from a user...</p>
+                        <p class="answer">Another AI response to the user's question.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box hidden" id="input-box">
+                <input type="text" id="user-input" placeholder="The question to the chatbot goes here...">
+                <button id="send-btn">Send</button>
+            </div>
+            <div class="join-conversation">
+                <button class="join-btn" id="join-conversation">Join the conversation</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleSidebar = document.getElementById('toggle-sidebar');
+        const sidebar = document.getElementById('sidebar');
+        const content = document.querySelector('.content');
+        const joinConversation = document.getElementById('join-conversation');
+        const inputBox = document.getElementById('input-box');
+
+        toggleSidebar.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+            content.classList.toggle('blurred');
+        });
+
+        joinConversation.addEventListener('click', () => {
+            inputBox.classList.remove('hidden');
+            joinConversation.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
