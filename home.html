@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="homeStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+    <!-- Header -->
+    <header>
+        <i class="fa-solid fa-bars" style="color: #f0f2f5;"></i>
+      <input type="text" class="search-bar" placeholder="Search for topics" />
+      <button class="add-topic">+</button>
+      <button class="logout">Logout</button>
+    </header>
+
+    <!-- Chat Section -->
+    <main class="chat-container">
+      <div class="chat-message user">
+        <p>Real life examples and also give an experiment to practice</p>
+        <span class="dropdown-toggle">▼</span>
+      </div>
+      <div class="chat-message bot">
+        <p>Recoil control is the only thing that happens when someone gets closer with it. Lorem ipsum recoil control is recoil control and does recoil operation very good like really really good!!!</p>
+        <span class="dropdown-toggle">▼</span>
+      </div>
+      <div class="chat-message user">
+        <p>I think you are a chatbot?</p>
+        <span class="dropdown-toggle">▼</span>
+      </div>
+      <div class="chat-message bot">
+        <p>Yes, you are correct!</p>
+        <span class="dropdown-toggle">▼</span>
+      </div>
+      <div class="chat-message user">
+        <p>Elaborate it a little in detail; I am an illiterate!</p>
+        <span class="dropdown-toggle">▼</span>
+      </div>
+      <div class="chat-message bot">
+        <p>Recoil control is the only thing that happens when someone gets closer with it.</p>
+        <span class="dropdown-toggle">▼</span>
+      </div>
+    </main>
+
+    <!-- Join Conversation Button -->
+    <footer>
+      <button class="join-button">Join the conversation</button>
+    </footer>
+  </div>
+
+  <script src="homeScript.js"></script>
+</body>
+</html>

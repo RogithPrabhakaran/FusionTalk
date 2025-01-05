@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Chat UI</title>
+    <link rel="stylesheet" href="stylehome.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" fill="#fff">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <h2 id="sidebar-heading" >My Topics</h2>
+            <ul id="myTopics">
+                <li>Nagish Application</li>
+                <li>Stelite Imaging</li>
+                <li>Food Quality  check</li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" id="searchBar" placeholder="Search for topics" />
+                    <!-- <button>Search</button> -->
+                </div>
+                <div class="search-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                      </svg>
+                    <a href="#"><i  class="bi bi-person"></i></a> 
+                </div>
+                    <div class="logout">
+                        <button >Logout</button>
+                    </div>
+                    
+                
+            </div>
+                <div class="topics">
+                    <div class="topic-row">
+                        <button>Virtual Herbal garden</button>
+                        <button>Peterson model</button>
+                        <button>Recoil control</button>
+                    </div>
+                    <div class="topic-row">
+                        <button>Carburator Fixes</button>
+                        <button>Fire rescue Drone</button>
+                        <button>Crouch Bug</button>
+                    </div>
+                    <div class="topic-row">
+                        <button>Torque increase</button>
+                        <button>Extremis serum</button>
+                        <button>Weather Forecast</button>
+                    </div>
+                </div>
+                <div class="trending">
+                <h2 style="padding-left: 18%;">Trending Topics</h2>
+
+                <div class="topics">
+                    <div class="topic-row">
+                        <button>Virtual Herbal garden</button>
+                        <button>Peterson model</button>
+                        <button>Recoil control</button>
+                    </div>
+                    <div class="topic-row">
+                        <button>Carburator Fixes</button>
+                        <button>Fire rescue Drone</button>
+                        <button>Crouch Bug</button>
+                    </div>
+                    <div class="topic-row">
+                        <button>Torque increase</button>
+                        <button>Extremis serum</button>
+                        <button>Weather Forecast</button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="footer">
+                    <input type="text" placeholder="The question to the chatbot goes here ..." />
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripthome.js"></script>
+</body>
+</html>

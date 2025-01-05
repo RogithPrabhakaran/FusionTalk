@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: "Albert Sans",serif;
+    background-color: #2D252D;
+    color: #DAD2DA;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2D252D;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4F404F;
+    color: #DAD2DA;
+    font-family: "Albert Sans", serif;
+    font-size: 16px;
+  }
+  .add-topic {
+    background-color: #4F404F;
+    color: #DAD2DA;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .logout{
+    background-color: #4F404F;
+    color: #DAD2DA;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  /* Chat Container */
+  .chat-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .chat-message {
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    max-width: 80%;
+  }
+  
+  .chat-message.user {
+    background-color: #4F404F;
+    color: #DAD2DA;
+    align-self: flex-start;
+  }
+  
+  .chat-message.bot {
+    background-color: #DAD2DA;
+    align-self: flex-end;
+    color: #4F404F;
+  }
+  
+  .chat-message p {
+    margin: 0;
+  }
+  
+  .dropdown-toggle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #2D252D;
+  }
+  
+  /* Join Button */
+  footer {
+    background-color: #2D252D;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .join-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4F404F;
+    color: #DAD2DA;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Albert Sans", serif;
+  }
+  
