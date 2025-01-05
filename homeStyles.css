@@ -8,7 +8,17 @@ body {
     flex-direction: column;
     height: 100vh;
   }
+  body{
+    z-index: 1;
+    background: linear-gradient(-45deg,#161616,#7B657B,#4F404F,#2D252D);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation: animate 15s ease infinite;
+  }
+
   
+
   /* Container */
   .container {
     display: flex;
@@ -21,20 +31,52 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #2D252D;
     gap: 10px;
   }
   
   .search-bar {
-    flex: 1;
-    padding: 8px;
-    border: none;
+    display: flex;
+    padding: 5px 10px;
     border-radius: 20px;
     background-color: #4F404F;
     color: #DAD2DA;
     font-family: "Albert Sans", serif;
     font-size: 16px;
+    align-items: center;
+    width: 100%;
+    min-width: auto;
+    height: 40px;
+    backdrop-filter: blur(4px) saturate(180%);
   }
+
+  .search-bar input{
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 18px;
+    color: #DAD2DA;
+    font-family: "Albert Sans", serif;
+  }
+  
+  ::placeholder{
+    color: #DAD2DA;
+  }
+
+  .search-bar button img{
+    width: 20px;
+  }
+
+  .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background:#DAD2DA;
+    cursor: pointer;
+  }
+
   .add-topic {
     background-color: #4F404F;
     color: #DAD2DA;
@@ -44,12 +86,16 @@ body {
     cursor: pointer;
   }
   .logout{
+    width: 100px;
+    height: 48px;
     background-color: #4F404F;
     color: #DAD2DA;
     border: none;
     border-radius: 20px;
     padding: 8px;
     cursor: pointer;
+    font-family: "Albert Sans", serif;
+    font-size: 15px;
   }
   
   /* Chat Container */
@@ -96,7 +142,6 @@ body {
   
   /* Join Button */
   footer {
-    background-color: #2D252D;
     padding: 10px;
     text-align: center;
   }
@@ -113,3 +158,14 @@ body {
     font-family: "Albert Sans", serif;
   }
   
+  @keyframes animate {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
